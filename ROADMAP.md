@@ -1,7 +1,7 @@
 # Roadmap
 
 HomeNodes started as one homelab's automation map. These phases turn it into an integration
-anyone can install from HACS.
+anyone can install from the Home Assistant Marketplace (HACS before 2026.11).
 
 ## 1. Own repo, with no change in behaviour (done)
 
@@ -110,7 +110,10 @@ change 24 → 5.6 ms, the clock tick 34 → 7 ms, focusing an automation 461 →
 ## 8. Rollout
 
 - [x] A beta through HACS as a custom repository (0.1.0).
-- [ ] The HACS default list, with an icon in `home-assistant/brands`.
+- [x] Install instructions for the Marketplace, which replaced HACS in Home Assistant 2026.11.
+- [ ] An icon in `custom_components/homenodes/brand/icon.png`, so CI can stop ignoring the
+  brands check.
+- [ ] The Marketplace catalog (still a pull request to `hacs/default`).
 
 ## Later, maybe
 

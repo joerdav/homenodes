@@ -5,7 +5,8 @@ conditions run into each automation, its actions run out, and when something hap
 it travel along the wires: a sensor changes, its automation lights up, the lights it turns on
 light up after it.
 
-> **Status: beta.** Install it from HACS as a custom repository. Bugs, rough edges and ideas
+> **Status: beta.** Install it from the Home Assistant Marketplace by link (it isn't in the
+> catalog yet), or from HACS on Home Assistant 2026.10 and older. Bugs, rough edges and ideas
 > are welcome in [issues](https://github.com/joerdav/homenodes/issues); see also
 > [ROADMAP.md](ROADMAP.md).
 
@@ -16,10 +17,17 @@ from [`docs/`](docs/) (`npm run docs` serves it locally).
 
 HomeNodes needs Home Assistant 2024.12 or later.
 
-1. In HACS, **⋮ → Custom repositories**, add `https://github.com/joerdav/homenodes` as an
-   **Integration**, download **HomeNodes** and restart. (Or copy `custom_components/homenodes`
-   into your `custom_components` folder by hand.)
-2. **Settings → Devices & services → Add integration → HomeNodes.**
+[![Open your Home Assistant instance and open a repository in the Marketplace.](https://my.home-assistant.io/badges/marketplace_repository.svg)](https://my.home-assistant.io/redirect/marketplace_repository/?owner=joerdav&repository=homenodes&category=integration)
+
+1. Get the files, then restart Home Assistant:
+   - **Home Assistant 2026.11 and later:** use the button above, or **Settings → Marketplace →
+     Add from link**, enter `joerdav/homenodes` and **Add**. Open **HomeNodes** and **Install**.
+   - **2026.10 and older:** in HACS, **⋮ → Custom repositories**, add
+     `https://github.com/joerdav/homenodes` as an **Integration** and download **HomeNodes**.
+   - **By hand:** copy `custom_components/homenodes` from the latest release into your
+     `custom_components` folder.
+2. **Settings → Devices & services → Add integration → HomeNodes**, or
+   [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=homenodes)
 3. Open **HomeNodes** in the sidebar. Only administrators see it.
 
 To rename the panel, change its icon or hide it, edit the sidebar as you would for any panel.
